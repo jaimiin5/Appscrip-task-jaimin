@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Second Section (Links and Socials) */}
+      {/* Second Section for(Links and Socials) */}
       <div className={S.footer2}>
         <div className={S.footerLinks}>
           <h4

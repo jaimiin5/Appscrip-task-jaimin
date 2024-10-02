@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Head from "next/head";  // Import Head for adding schema to <head>
-import Image from "next/image";
+import Head from "next/head"; 
 import React, { useEffect, useState } from "react";
 import * as S from "./Home.module.css";
 import { CiHeart } from "react-icons/ci";

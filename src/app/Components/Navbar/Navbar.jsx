@@ -16,12 +16,10 @@ const Navbar = () => {
   return (
     <nav className={S.navbar}>
       <div className={S.navbarContainer}>
-        {/* Hamburger Menu */}
         <div className={S.hamburger} onClick={toggleMobileMenu}>
           ☰
         </div>
 
-        {/* Mobile Slider Menu */}
         <div className={`${S.mobileMenu} ${isMobileMenuOpen ? S.open : ""}`}>
           <div className={S.closeMenu} onClick={toggleMobileMenu}>
             <VscClose />
@@ -29,7 +27,7 @@ const Navbar = () => {
           <ul>
             <li>
               <a href="#">Shop</a>
-            </li> 
+            </li>
             <li>
               <a href="#">Skills</a>
             </li>
@@ -49,7 +47,6 @@ const Navbar = () => {
           <a href="#">LOGO</a>
         </div>
 
-        {/* Nav Links - Visible in Desktop */}
         <ul className={S.navLinks}>
           <li>
             <a href="#">Shop</a>
@@ -68,7 +65,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Right-Side Icons */}
         <div className={S.navIcons}>
           <a href="#" className={S.icon}>
             <CiSearch />
