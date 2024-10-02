@@ -1,8 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
+import Head from "next/head";
 
 export default function Home() {
   return (

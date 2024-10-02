@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Head from "next/head";  // Import Head for adding schema to <head>
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import * as S from "./Home.module.css";
@@ -46,6 +47,42 @@ const Home = () => {
 
   return (
     <section className={S.homeSection}>
+      <Head>
+        <title>Discover Our Products - [Your Store Name]</title>
+        <meta
+          name="description"
+          content="Explore our wide range of products, specially curated for you."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "itemListElement": productsData
+                ? productsData.map((product, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "item": {
+                      "@type": "Product",
+                      "name": product.title,
+                      "image": product.image,
+                      "description": product.description,
+                      "sku": product.id,
+                      "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "USD",
+                        "price": product.price,
+                        "availability": "https://schema.org/InStock"
+                      }
+                    }
+                  }))
+                : []
+            }),
+          }}
+        />
+      </Head>
+
       <h1 className={S.sectionTitle}>Discover Our Products</h1>
       <p className={S.sectionDesc}>
         Explore our wide range of products, specially curated for you.
