@@ -1,0 +1,144 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 3rem;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid white;
+}
+
+.subscribeSection {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.subscribeSection h3 {
+  font-size: 1.5rem;
+}
+
+.subscribeForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.subscribeForm input {
+  padding: 0.5rem;
+  width: 300px;
+  border: none;
+  margin-right: 1rem;
+}
+
+.subscribeForm button {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: rgb(182, 182, 182);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.footer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerLinks {
+  margin: 2rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+}
+
+.footerLinks ul li {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.footerLinks ul li:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  font-size: 2.5rem;
+  margin: 1.75rem 0;
+}
+
+.paymentOptions {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 3.5rem;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer1 {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer2 {
+    display: block;
+    text-align: center;
+  }
+
+  .footerLinks {
+    margin: 1rem 0;
+  }
+
+  .subscribeForm {
+    flex-direction: column;
+  }
+
+  .subscribeForm input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .dropdownTitle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+  }
+  .dropdownContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  .dropdownContent.open {
+    max-height: 500px;
+  }
+  .socials {
+    font-size: 2rem;
+  }
+  .paymentOptions {
+    font-size: 2.5rem;
+  }
+}

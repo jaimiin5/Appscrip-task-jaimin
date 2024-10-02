@@ -1,0 +1,38 @@
+.filterSection {
+  margin: 1rem 0;
+}
+.customizable {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding: 0.75rem;
+}
+.dropdown {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding: 0.75rem;
+}
+
+.dropdownTitle {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  padding: 0.6rem;
+}
+
+.dropdownContent {
+  background: #fff;
+  border-radius: 4px;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdownContent.open {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+
+.checks {
+  margin: 5px 0;
+}
